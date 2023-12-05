@@ -1,0 +1,49 @@
+{
+  "name": "health-ts",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc && vite build",
+    "preview": "vite preview",
+    "log": "conventional-changelog --config ./node_modules/vue-cli-plugin-commitlint/lib/log/index.js -i CHANGELOG.md -s -r 0",
+    "cz": "npm run log && git add . && git cz"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/vue-cli-plugin-commitlint/lib/cz"
+    }
+  },
+  "dependencies": {
+    "axios": "^1.6.2",
+    "commitlint": "^18.4.3",
+    "conventional-changelog-cli": "^4.1.0",
+    "core-js": "^3.33.3",
+    "husky": "^8.0.3",
+    "less": "^4.2.0",
+    "mathjs": "^12.1.0",
+    "mitt": "^3.0.1",
+    "moment": "^2.29.4",
+    "nprogress": "^0.2.0",
+    "pinia": "^2.1.7",
+    "vue": "^3.3.8",
+    "vue-cli-plugin-commitlint": "^1.0.12",
+    "vue-router": "^4.2.5"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.5.0",
+    "commitizen": "^4.3.0",
+    "cz-conventional-changelog": "^3.3.0",
+    "typescript": "^5.2.2",
+    "vite": "^5.0.0",
+    "vue-tsc": "^1.8.22",
+    "conventional-changelog": "^3.1.25",
+    "conventional-changelog-custom-config": "^0.3.1"
+  }
+}
