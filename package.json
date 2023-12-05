@@ -32,6 +32,7 @@
     "moment": "^2.29.4",
     "nprogress": "^0.2.0",
     "pinia": "^2.1.7",
+    "right-pad": "^1.0.1",
     "vue": "^3.3.8",
     "vue-cli-plugin-commitlint": "^1.0.12",
     "vue-router": "^4.2.5"
@@ -39,11 +40,11 @@
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.5.0",
     "commitizen": "^4.3.0",
+    "conventional-changelog": "^3.1.25",
+    "conventional-changelog-custom-config": "^0.3.1",
     "cz-conventional-changelog": "^3.3.0",
     "typescript": "^5.2.2",
     "vite": "^5.0.0",
-    "vue-tsc": "^1.8.22",
-    "conventional-changelog": "^3.1.25",
-    "conventional-changelog-custom-config": "^0.3.1"
+    "vue-tsc": "^1.8.22"
   }
 }
